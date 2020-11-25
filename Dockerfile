@@ -91,7 +91,3 @@ ENV ETCDCTL_API 3
 COPY eviltwin.sh /
 RUN chmod +x /eviltwin.sh
 ENTRYPOINT ["/eviltwin.sh"]
-
-# Create user groups and group
-RUN addgroup -S -g 3000 testgroup && adduser -S -D testuser --uid 100  -G testgroup
-USER testuser
