@@ -13,5 +13,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: mcanog/kube-tester
+          repository: macagr/kube-tester
           tag_with_ref: true
